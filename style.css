@@ -1,112 +1,149 @@
-
-body{
-    background-color: #00674f;
-    color: white;
-    font-family: Arial, sans-serif, 'Times New Roman';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-head{
-    background-color: #00674f;
-    padding: 20px;
-    text-align: center;
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  line-height: 1.7;
 }
 
-.main{
-    background-color: #00674f;
-    color: white;
-    font-family: Arial;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-
+nav {
+  background-color: #1f1f1f;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
-h1{
-    font-size: 60px;
-    text-align: center;
-    text-shadow: 4px 4px 4px #000000;
+nav a {
+  color: #00ffd5;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
-h2{
-    font-size: 40px;
-    text-align: left;
-    text-shadow: 4px 4px 4px green;
-    margin-left: 12.5%;
+nav a:hover {
+  color: #ffffff;
 }
 
-p{
-    font-size: 20px;
-    color: white;
+.hero {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
 }
 
-#intro{
-    text-align: center;
-    font-size: 20px;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-.preston-pic{
-    width: 25%;
-    height: 50%;
-    float: right;
-    margin-right: 15%;
-    
+.hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
 }
 
-.container{
-    float: center;
-}
-.containeriframe {
-    width: 560px;
-    height: 315px;
-    border: none;
-    float: center;
-}   
-
-
-#table1{
-    border-collapse: collapse;
-    width: 30%;
-    height: 75%;
-    margin-left: 5%;
-    text-align: center;
-    font-size: 20px;
-    float: left;
-    line-height: 2;
-    font-family: sans-serif, 'Times New Roman';
-    font-size: 20px;
+.section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
-
-button{
-    background-color: white;
-    color: black;
-    border-radius: 10px ;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00ffd5;
+  display: inline-block;
 }
 
-button:hover{
-    background-color: darkgrey;
+.projects-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
-button:active{
-    background-color: #004830;
+.project-card {
+  background: #23272f;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  padding: 2rem 1.2rem;
+  width: 250px;
+  min-height: 130px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.bottom{
-    background-color: #00674f;
-    color: white;
-    font-family: Arial;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
+.project-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,255,213,0.09);
 }
 
-#lebron{
+.blog-list {
+  margin-top: 1.5rem;
+}
 
+.blog-entry {
+  background: #222;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.9rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 0.9rem;
+  background: #00ffd5;
+  color: #121212;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form button:hover {
+  background: #009e85;
+  color: #fff;
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 1.5rem;
+  background: #191919;
+  color: #bbb;
+  text-align: center;
+  font-size: 1rem;
+  border-top: 1px solid #222;
 }
