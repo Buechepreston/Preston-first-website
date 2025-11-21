@@ -1,181 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Preston's Digital Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <title>Preston Bueche</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Summer sun animation */
-    .summer-sun {
-      position: fixed;
-      top: -80px;
-      right: -80px;
-      width: 180px;
-      height: 180px;
-      background: radial-gradient(circle at 60% 40%, #ffe259 70%, #ffa751 100%);
-      border-radius: 50%;
-      box-shadow: 0 0 60px 20px #ffe25999;
-      z-index: 0;
-      animation: sun-spin 12s linear infinite;
-      opacity: 0.85;
-    }
-    @keyframes sun-spin {
-      0% { transform: rotate(0deg);}
-      100% { transform: rotate(360deg);}
-    }
-    body {
-      position: relative;
-      overflow-x: hidden;
-    }
-    .sidebar-toggle {
-      display: none;
-      position: absolute;
-      top: 1.2rem;
-      left: 1.2rem;
-      background: #ff4e50;
-      color: #fff;
-      border: none;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      font-size: 1.5rem;
-      z-index: 2001;
-      cursor: pointer;
-      box-shadow: 0 2px 8px #ffb34755;
-    }
-    @media (max-width: 900px) {
-      .sidebar-toggle {
-        display: block;
-      }
-    }
-    .back-to-top {
-      position: fixed;
-      bottom: 32px;
-      right: 32px;
-      background: #43cea2;
-      color: #fff;
-      border: none;
-      border-radius: 50%;
-      width: 48px;
-      height: 48px;
-      font-size: 2rem;
-      box-shadow: 0 2px 12px #43cea255;
-      cursor: pointer;
-      z-index: 2002;
-      display: none;
-      transition: background 0.2s;
-    }
-    .back-to-top:hover {
-      background: #ff4e50;
-    }
-  </style>
 </head>
+
 <body>
-  <div class="summer-sun"></div>
-
-  <!-- Sidebar Navigation -->
-  <button class="sidebar-toggle" aria-label="Open navigation" onclick="document.body.classList.toggle('sidebar-open')">
-    <i class="fas fa-bars"></i>
-  </button>
-  <aside class="sidebar">
-    <div class="sidebar-logo">
-      <span>☀️ Preston</span>
-      <button aria-label="Close navigation" onclick="document.body.classList.remove('sidebar-open')" class="sidebar-close">
-        <i class="fas fa-times"></i>
-      </button>
-    </div>
-    <nav>
-      <a href="#home" onclick="document.body.classList.remove('sidebar-open')">Home</a>
-      <a href="#about" onclick="document.body.classList.remove('sidebar-open')">About</a>
-      <a href="#projects" onclick="document.body.classList.remove('sidebar-open')">Projects</a>
-      <a href="#blog" onclick="document.body.classList.remove('sidebar-open')">Blog</a>
-      <a href="#contact" onclick="document.body.classList.remove('sidebar-open')">Contact</a>
-    </nav>
-  </aside>
-
-  <!-- Main Content Layout -->
-  <div class="layout">
-    <header>
-      <div class="header-logo">☀️ Preston's Portfolio</div>
-      <nav class="header-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <h1>Preston Bueche</h1>
+      <p class="tagline">Advertising student • Sports fan • Always learning</p>
     </header>
+
+    <section class="hero" id="intro">
+      <p>
+        Hi everyone, welcome to Preston-Bueche.com!  
+        This is my first live run at coding my own website.  
+        Check back in as I keep updating and growing this space.
+      </p>
+      <p class="signature">– Preston Bueche</p>
+      <button id="say-hi-btn" class="primary-btn">Say hi</button>
+    </section>
+
     <main>
-      <!-- Hero Section -->
-      <section class="hero" id="home">
-        <h1>☀️🏙️ Hey, I'm Preston!</h1>
-        <p>Just a curious mind from Detroit who loves building stuff and sharing ideas. Welcome to my little corner of the web!</p>
-      </section>
-      <!-- Time-based Greeting -->
-      <div id="greeting" style="text-align:center; font-size:1.2rem; margin-top:1rem; margin-bottom:0.5rem;"></div>
-      <!-- About Section -->
-      <section class="section" id="about">
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="Preston holding a Gin & Juice shirt" class="about-photo" style="display:block;max-width:260px;width:90%;margin:1.5rem auto 1rem auto;border-radius:18px;box-shadow:0 4px 24px rgba(67,206,162,0.13);object-fit:cover;">
-        <p>
-          I'm hanging out at Michigan State University, learning all about Advertising Management.  
-          Born and raised near Detroit, so you know I bring a little Motor City hustle to everything I do.  
-          I’m always up for trying new things, making cool projects, and chatting about what I find.  
-          Thanks for stopping by—hope you enjoy the site!
-        </p>
-        <button id="factBtn" type="button" style="margin-top:1rem; background:#43cea2; color:#fff; border:none; border-radius:8px; padding:0.6rem 1.2rem; font-size:1rem; cursor:pointer; font-weight:bold;">Show me a Detroit fact!</button>
-        <div id="detroitFact" style="margin-top:1rem; font-size:1.1rem; color:#185a9d; min-height:32px;"></div>
-      </section>
-
-      <!-- Projects Section -->
-      <section class="section" id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>Personal Website</h3>
-            <p>This is my own spot on the internet, made with HTML and CSS. You’re looking at it right now!</p>
-          </div>
-          <div class="project-card">
-            <h3>JavaScript Quiz Game</h3>
-            <p>A fun little trivia game. (Coming soon—stay tuned!)</p>
-          </div>
-          <!-- Add more project cards here -->
+      <section class="section">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <span class="section-label">Picture of Preston</span>
         </div>
-      </section>
 
-      <!-- Blog Section -->
-      <section class="section" id="blog">
-        <h2>Blog</h2>
-        <div class="blog-list">
-          <div class="blog-entry">
-            <h4>📝 Why I Started Coding</h4>
-            <p>I kicked things off with a simple “Hello, world!” and just wanted to see what I could make. Turns out, building stuff is pretty awesome.</p>
+        <div class="about-layout">
+          <div class="about-text">
+            <p>
+              I’m a 20-year-old college student at Michigan State University, 
+              majoring in Advertising Management with a minor in Business.
+            </p>
+            <p>
+              I’m a passionate sports fan, especially of the Detroit Lions, 
+              Detroit Tigers, Michigan State Spartans, and Los Angeles Lakers.
+            </p>
+            <p>
+              I love spending time in public spaces, meeting new people, and 
+              connecting through things like pick-up basketball games.
+            </p>
+            <p>
+              Outside of sports, I’ve got a big interest in learning new skills, 
+              whether it’s coding projects like this site or taking classes such 
+              as real estate to expand what I know and can do.
+            </p>
           </div>
-          <div class="blog-entry">
-            <h4>💡 3 Tips for Beginner Web Devs</h4>
-            <p>Don’t stress about breaking things—that’s how you learn! Here are my top three tips for anyone just getting started...</p>
+
+          <div class="about-photo">
+            <img class="preston-pic" src="IMG_0830.jpeg" alt="Photo of Preston Bueche">
           </div>
         </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="section" id="contact">
-        <h2>Contact</h2>
-        <form class="contact-form">
-          <input type="text" placeholder="What's your name?" required>
-          <input type="email" placeholder="Your email address" required>
-          <textarea placeholder="Drop me a message!" required></textarea>
-          <button type="submit">Send Some Sunshine</button>
-        </form>
       </section>
     </main>
-    <footer>
-      <p>© 2025 Preston Bueche | Built with lots of ☕, good vibes, and a little Detroit spirit 🏙️</p>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Preston Bueche • Built by hand</p>
     </footer>
   </div>
-  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
   <script src="interaction.js"></script>
 </body>
 </html>
