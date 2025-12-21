@@ -1,12 +1,10 @@
-// interaction.js
-
 document.addEventListener("DOMContentLoaded", () => {
   const hiBtn = document.getElementById("say-hi-btn");
   const yearSpan = document.getElementById("year");
 
   if (hiBtn) {
     hiBtn.addEventListener("click", () => {
-      alert("Thanks for checking out my site! I'm still building, so check back soon. – Preston");
+      alert("Appreciate you checking out my site. More updates coming soon. – Preston");
     });
   }
 
