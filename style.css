@@ -167,3 +167,12 @@ h1{
   padding: 12px;
   background: rgba(247,247,245,.6);
 }
+
+.preston-pic{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+
