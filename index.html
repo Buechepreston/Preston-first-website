@@ -1,68 +1,160 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Preston Bueche</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Preston Bueche | Michigan State University Advertising Management student. Portfolio, resume, and contact." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="page-wrapper">
-    <header class="site-header">
-      <h1>Preston Bueche</h1>
-      <p class="tagline">Advertising student • Sports fan • Always learning</p>
-    </header>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="#top" aria-label="Home">PB</a>
 
-    <section class="hero" id="intro">
-      <p>
-        Hi everyone, welcome to Preston-Bueche.com!  
-        This is my first live run at coding my own website.  
-        Check back in as I keep updating and growing this space.
-      </p>
-      <p class="signature">– Preston Bueche</p>
-      <button id="say-hi-btn" class="primary-btn">Say hi</button>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#links">Links</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-card">
+          <p class="tag">Michigan State University</p>
+          <h1>Preston Bueche</h1>
+          <p class="subhead">
+            Advertising Management student • Sports fan • Always learning
+          </p>
+
+          <p class="hero-copy">
+            Welcome to preston-bueche.com. This is my home base for projects, updates, and the stuff I’m building next.
+          </p>
+
+          <div class="cta-row">
+            <button id="say-hi-btn" class="btn">Say hi</button>
+
+            <!-- Put your PDFs in /assets/docs with these exact names -->
+            <a class="btn btn-ghost" href="assets/docs/Resume-Google-Docs.pdf" target="_blank" rel="noopener">
+              Download Resume
+            </a>
+            <a class="btn btn-ghost" href="assets/docs/Acting-Resume.pdf" target="_blank" rel="noopener">
+              Acting Resume
+            </a>
+          </div>
+
+          <div class="quick-facts">
+            <div class="fact">
+              <span class="fact-label">Focus</span>
+              <span class="fact-value">Advertising, content, creative</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Based in</span>
+              <span class="fact-value">East Lansing, MI</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Currently</span>
+              <span class="fact-value">Building + applying</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-photo card">
+          <!-- keep your existing image filename -->
+          <img class="preston-pic" src="IMG_0830.jpeg" alt="Photo of Preston Bueche" />
+          <p class="photo-caption">Go Green (but make it clean).</p>
+        </div>
+      </div>
     </section>
 
-    <main>
-      <section class="section">
-        <div class="section-header">
-          <h2>About Me</h2>
-          <span class="section-label">Picture of Preston</span>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>Short, clear, not a novel.</p>
         </div>
 
-        <div class="about-layout">
-          <div class="about-text">
+        <div class="grid">
+          <article class="card">
+            <h3>Who I am</h3>
             <p>
-              I’m a 20-year-old college student at Michigan State University, 
-              majoring in Advertising Management with a minor in Business.
+              I’m a student at Michigan State University studying Advertising Management with a minor in Business.
             </p>
-            <p>
-              I’m a passionate sports fan, especially of the Detroit Lions, 
-              Detroit Tigers, Michigan State Spartans, and Los Angeles Lakers.
-            </p>
-            <p>
-              I love spending time in public spaces, meeting new people, and 
-              connecting through things like pick-up basketball games.
-            </p>
-            <p>
-              Outside of sports, I’ve got a big interest in learning new skills, 
-              whether it’s coding projects like this site or taking classes such 
-              as real estate to expand what I know and can do.
-            </p>
-          </div>
+          </article>
 
-          <div class="about-photo">
-            <img class="preston-pic" src="IMG_0830.jpeg" alt="Photo of Preston Bueche">
-          </div>
+          <article class="card">
+            <h3>What I’m into</h3>
+            <p>
+              Detroit Lions, Tigers, MSU Spartans, Lakers. I like being out in public spaces and meeting people.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>What I’m building</h3>
+            <p>
+              Coding projects (like this site), new skills, and anything that helps me grow creatively and professionally.
+            </p>
+          </article>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Preston Bueche • Built by hand</p>
-    </footer>
-  </div>
+    <section class="section" id="links">
+      <div class="container">
+        <div class="section-head">
+          <h2>Links</h2>
+          <p>Stuff that helps people verify you’re real.</p>
+        </div>
+
+        <div class="grid">
+          <a class="card link-card" href="assets/docs/Resume-Google-Docs.pdf" target="_blank" rel="noopener">
+            <h3>Resume (PDF)</h3>
+            <p>Download my current resume.</p>
+            <span class="chip">PDF</span>
+          </a>
+
+          <a class="card link-card" href="assets/docs/Acting-Resume.pdf" target="_blank" rel="noopener">
+            <h3>Acting Resume (PDF)</h3>
+            <p>Roles, projects, and performance work.</p>
+            <span class="chip">PDF</span>
+          </a>
+
+          <!-- Replace with your real links when ready -->
+          <a class="card link-card" href="#" aria-disabled="true">
+            <h3>LinkedIn</h3>
+            <p>Add your profile link here.</p>
+            <span class="chip chip-muted">Coming soon</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact card">
+          <h2>Contact</h2>
+          <p class="contact-line">
+            Email:
+            <a href="mailto:Buechepreston@gmail.com">Buechepreston@gmail.com</a>
+          </p>
+          <p class="tiny">
+            Open to internships, creative projects, and performance opportunities.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Preston Bueche</p>
+      <p class="tiny">Built by hand. Mostly.</p>
+    </div>
+  </footer>
 
   <script src="interaction.js"></script>
 </body>
