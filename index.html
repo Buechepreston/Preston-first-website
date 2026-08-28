@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Preston Bueche</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Preston Bueche | Michigan State University Advertising Management student. Portfolio, resume, and contact." />
+  <title>Preston Bueche | Actor, Comedian & Creator</title>
+  <meta
+    name="description"
+    content="Preston Bueche is a Michigan State University Advertising Management student, actor, comedian, creator, and builder based in East Lansing, Michigan."
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header class="site-header">
     <div class="container header-row">
-      <a class="logo" href="#top" aria-label="Home">PB</a>
+      <a class="logo" href="#top" aria-label="Preston Bueche home">PB</a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary navigation">
         <a href="#about">About</a>
+        <a href="#performance">Performance</a>
+        <a href="#work">Work</a>
         <a href="#links">Links</a>
         <a href="#contact" class="btn btn-small">Contact</a>
       </nav>
@@ -25,79 +29,224 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-card">
-          <p class="tag">Michigan State University</p>
-          <h1>Preston Bueche</h1>
-          <p class="subhead">
-            Advertising Management student • Sports fan • Always learning
-          </p>
+          <p class="eyebrow">Michigan State University • East Lansing, MI</p>
+
+          <h1>
+            Preston Bueche
+            <span>Actor. Comedian. Creator.</span>
+          </h1>
 
           <p class="hero-copy">
-            Welcome to my website!!! It's a work in progess. Thanks for stopping by. - Preston bueche
+            I’m an Advertising Management student at Michigan State building a career across
+            entertainment, comedy, content, and creative work. I act, write, perform, make things,
+            and occasionally convince myself coding is a reasonable hobby.
           </p>
 
           <div class="cta-row">
-            <button id="say-hi-btn" class="btn">Say hi</button>
-
-            <!-- Put your PDFs in /assets/docs with these exact names -->
-            <a class="btn btn-ghost" href="Resume - Google Docs.pdf" target="_blank">
-              Download Resume
-            </a>
-            <a class="btn btn-ghost" href="Acting Resume.pdf" target="_blank">
+            <a class="btn" href="#work">See my work</a>
+            <a class="btn btn-ghost" href="https://www.imdb.com/name/nm18472658/" target="_blank" rel="noopener">IMDb</a>
+            <a class="btn btn-ghost" href="assets/docs/Acting-Resume.pdf" target="_blank" rel="noopener">
               Acting Resume
             </a>
+            <a class="btn btn-ghost" href="assets/docs/Professional-Resume.pdf" target="_blank" rel="noopener">
+              Professional Resume
+            </a>
           </div>
 
-          <div class="quick-facts">
+          <div class="quick-facts" aria-label="Quick facts">
             <div class="fact">
               <span class="fact-label">Focus</span>
-              <span class="fact-value">Acting, Modeling, and Education</span>
+              <span class="fact-value">Acting + Comedy + Creative</span>
             </div>
             <div class="fact">
-              <span class="fact-label">Based in</span>
-              <span class="fact-value">East Lansing, MI</span>
+              <span class="fact-label">Studying</span>
+              <span class="fact-value">Advertising + Business</span>
             </div>
             <div class="fact">
-              <span class="fact-label">Currently</span>
-              <span class="fact-value">Learning and Growing</span>
+              <span class="fact-label">Building</span>
+              <span class="fact-value">Original projects + products</span>
             </div>
           </div>
         </div>
 
-        <div class="hero-photo card">
-          <!-- keep your existing image filename -->
-          <img class="preston-pic" src="IMG_2460.jpeg" alt="Photo of Preston Bueche" />
-          <p class="photo-caption">Go Green.</p>
-        </div>
+        <aside class="hero-photo card">
+          <div class="photo-frame">
+            <img class="preston-pic" src="assets/images/headshot-000.jpg" alt="Preston Bueche" />
+          </div>
+          <div class="photo-meta">
+            <span>Preston Bueche</span>
+            <span>Actor • Creator</span>
+          </div>
+        </aside>
       </div>
     </section>
 
     <section class="section" id="about">
       <div class="container">
-        <div class="section-head">
-          <h2>About</h2>
-          <p>Who is Preston Bueche?</p>
+        <div class="section-head split-head">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>A few lanes. One career.</h2>
+          </div>
+          <p class="section-intro">
+            My work sits at the intersection of performance, storytelling, advertising, and technology.
+            Different formats, same goal: make something people actually want to pay attention to.
+          </p>
         </div>
 
-        <div class="grid">
-          <article class="card">
-            <h3>Who I am</h3>
+        <div class="about-grid">
+          <article class="card about-card">
+            <span class="card-number">01</span>
+            <h3>Performance</h3>
             <p>
-              I’m a student at Michigan State University studying Advertising Management with a minor in Business.
+              Film, commercial, theater, self-tapes, and stand-up. I’m especially drawn to comedy,
+              character-driven work, and projects with a strong point of view.
             </p>
           </article>
 
-          <article class="card">
-            <h3>What I’m into</h3>
+          <article class="card about-card">
+            <span class="card-number">02</span>
+            <h3>Creative</h3>
             <p>
-              Detroit Lions, Tigers, MSU Spartans, Lakers. I like being out in public spaces and meeting people.
+              I study Advertising Management at Michigan State with a Business minor, with interests
+              in brand strategy, social content, entertainment marketing, and audience behavior.
             </p>
           </article>
 
-          <article class="card">
-            <h3>What I’m building</h3>
+          <article class="card about-card">
+            <span class="card-number">03</span>
+            <h3>Building</h3>
             <p>
-              i want to have a digital Portfolio that anyone could see or interact with.
+              I like taking ideas past the “that would be cool” stage. That includes original scripts,
+              digital projects, and products built around problems I’ve actually run into.
             </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section performance-section" id="performance">
+      <div class="container">
+        <div class="section-head split-head">
+          <div>
+            <p class="eyebrow">Performance</p>
+            <h2>Actor snapshot.</h2>
+          </div>
+          <p class="section-intro">
+            Film, commercial, theater, comedy, and creator work, with a performance background that also
+            includes music and improvisation.
+          </p>
+        </div>
+
+        <div class="performance-grid">
+          <article class="card stats-card">
+            <p class="eyebrow">Stats</p>
+            <div class="stat-list">
+              <div><span>Height</span><strong>5'8"</strong></div>
+              <div><span>Hair</span><strong>Brown</strong></div>
+              <div><span>Eyes</span><strong>Blue</strong></div>
+            </div>
+            <a class="text-link" href="assets/docs/Acting-Resume.pdf" target="_blank" rel="noopener">View full acting resume ↗</a>
+          </article>
+
+          <article class="card credits-card">
+            <p class="eyebrow">Selected credits</p>
+            <div class="credit-row"><span>Faygo Soda Social Campaign</span><strong>Featured Talent</strong></div>
+            <div class="credit-row"><span>Bowling Alone</span><strong>Wolf</strong></div>
+            <div class="credit-row"><span>Batman Scene Recreation</span><strong>Batman</strong></div>
+            <div class="credit-row"><span>Diabolical Wintermoon Mysticism</span><strong>Supporting</strong></div>
+          </article>
+
+          <article class="card skills-card">
+            <p class="eyebrow">Special skills</p>
+            <div class="skill-cloud">
+              <span>Stand-Up Comedy</span><span>Improvisation</span><span>Piano</span><span>Guitar</span>
+              <span>Singing</span><span>Golf</span><span>Social Media Content</span>
+            </div>
+            <a class="text-link" href="https://www.imdb.com/name/nm18472658/" target="_blank" rel="noopener">Open IMDb profile ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="work">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2>Things I’m working on.</h2>
+          <p>
+            A mix of performance, original ideas, and creative projects. Apparently choosing one thing
+            would have been too efficient.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-featured">
+            <div class="project-topline">
+              <span class="project-type">Product / iOS</span>
+              <span class="status">In development</span>
+            </div>
+            <h3>Speak It</h3>
+            <p>
+              An actor-focused rehearsal app designed to help performers import scripts, practice scenes,
+              hear scene-partner lines, use speech recognition, and review missed words.
+            </p>
+            <div class="project-tags">
+              <span>Swift</span>
+              <span>Speech Recognition</span>
+              <span>Actor Tools</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-type">Original Series</span>
+              <span class="status">Writing</span>
+            </div>
+            <h3>Up and Coming</h3>
+            <p>
+              An original comedy series about a college senior trying to turn stand-up, content, and
+              creative ambition into an actual path toward Hollywood.
+            </p>
+            <div class="project-tags">
+              <span>Comedy</span>
+              <span>Screenwriting</span>
+              <span>Original IP</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-type">Brand / Performance</span>
+              <span class="status">Campaign work</span>
+            </div>
+            <h3>Faygo</h3>
+            <p>
+              On-camera and social campaign experience for a Michigan brand, combining performance with
+              short-form branded content.
+            </p>
+            <div class="project-tags">
+              <span>Commercial</span>
+              <span>Social</span>
+              <span>UGC</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-type">Film</span>
+              <span class="status">Screen acting</span>
+            </div>
+            <h3>Bowling Alone</h3>
+            <p>
+              Screen role as Wolf in a Tim Wilson Film production, part of my growing on-camera body of work
+              alongside commercial, theater, and self-tape experience.
+            </p>
+            <div class="project-tags">
+              <span>Film</span>
+              <span>Acting</span>
+              <span>Performance</span>
+            </div>
           </article>
         </div>
       </div>
@@ -106,44 +255,54 @@
     <section class="section" id="links">
       <div class="container">
         <div class="section-head">
-          <h2>Links</h2>
-          <p>More info about Preston</p>
+          <p class="eyebrow">Links</p>
+          <h2>The useful stuff.</h2>
+          <p>Resumes, profiles, and other evidence that I do in fact exist outside this website.</p>
         </div>
 
-        <div class="grid">
-          <a class="card link-card" href="assets/docs/Resume - Google Docs.pdf" target="_blank" rel="noopener">
-            <h3>Resume (PDF)</h3>
-            <p>Download my current resume.</p>
-            <span class="chip">PDF</span>
+        <div class="link-grid">
+          <a class="card link-card" href="assets/docs/Acting-Resume.pdf" target="_blank" rel="noopener">
+            <span class="link-kicker">PDF</span>
+            <h3>Acting Resume</h3>
+            <p>Film, commercial, theater, training, and performance experience.</p>
+            <span class="arrow" aria-hidden="true">↗</span>
           </a>
 
-          <a class="card link-card" href="assets/docs/Acting Resume.pdf" target="_blank" rel="noopener">
-            <h3>Acting Resume (PDF)</h3>
-            <p>Roles, projects, and performance work.</p>
-            <span class="chip">PDF</span>
+          <a class="card link-card" href="assets/docs/Professional-Resume.pdf" target="_blank" rel="noopener">
+            <span class="link-kicker">PDF</span>
+            <h3>Professional Resume</h3>
+            <p>Advertising, work experience, education, and professional background.</p>
+            <span class="arrow" aria-hidden="true">↗</span>
           </a>
 
-          <!-- Replace with your real links when ready -->
-          <a class="card link-card" href="https://www.linkedin.com/in/preston-bueche/" target="_blank">
-            <h3>LinkedIn</h3>
-            <p>linkedin.com/in/preston-bueche/</p>
-            <span class="chip chip-muted">Link</span>
+          <a class="card link-card" href="https://www.imdb.com/name/nm18472658/" target="_blank" rel="noopener">
+            <span class="link-kicker">Profile</span>
+            <h3>IMDb</h3>
+            <p>View my screen credits and IMDb profile.</p>
+            <span class="arrow" aria-hidden="true">↗</span>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="section contact-section" id="contact">
       <div class="container">
-        <div class="contact card">
-          <h2>Contact</h2>
-          <p class="contact-line">
-            Email:
-            <a href="mailto:Buechepreston@gmail.com">Buechepreston@gmail.com</a>
-          </p>
-          <p class="tiny">
-            Open to internships, creative projects, and performance opportunities.
-          </p>
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow light">Contact</p>
+            <h2>Have a role, project, campaign, or idea?</h2>
+            <p>
+              I’m open to acting, comedy, UGC, creative, advertising, and collaborative opportunities.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-light" href="mailto:Buechepreston@gmail.com">Email me</a>
+            <button class="btn btn-outline-light" id="copy-email-btn" type="button" data-email="Buechepreston@gmail.com">
+              Copy email
+            </button>
+            <p class="copy-status" id="copy-status" aria-live="polite"></p>
+          </div>
         </div>
       </div>
     </section>
