@@ -1,28 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const yearSpan = document.getElementById("year");
-  const copyButton = document.getElementById("copy-email-btn");
-  const copyStatus = document.getElementById("copy-status");
+const year = document.querySelector('#year');
+const copyButton = document.querySelector('#copy-email');
 
-  if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
+year.textContent = new Date().getFullYear();
+
+copyButton.addEventListener('click', async () => {
+  const original = copyButton.textContent;
+  try {
+    await navigator.clipboard.writeText(copyButton.dataset.email);
+    copyButton.textContent = 'Email copied';
+  } catch {
+    copyButton.textContent = 'buechepreston@gmail.com';
   }
-
-  if (copyButton && copyStatus) {
-    copyButton.addEventListener("click", async () => {
-      const email = copyButton.dataset.email;
-
-      try {
-        await navigator.clipboard.writeText(email);
-        copyStatus.textContent = "Email copied.";
-        copyButton.textContent = "Copied";
-
-        window.setTimeout(() => {
-          copyStatus.textContent = "";
-          copyButton.textContent = "Copy email";
-        }, 1800);
-      } catch {
-        copyStatus.textContent = email;
-      }
-    });
-  }
+  setTimeout(() => { copyButton.textContent = original; }, 2200);
 });
